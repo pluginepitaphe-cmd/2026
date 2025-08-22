@@ -17,7 +17,7 @@ ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')
 
 # Database configuration
-DATABASE_URL = os.environ.get('DATABASE_URL', 'sqlite+aiosqlite:///./test.db')
+DATABASE_URL = os.environ.get('DATABASE_URL', 'postgresql+asyncpg://user:password@localhost/dbname')
 
 # Create async engine
 engine = create_async_engine(
