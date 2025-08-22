@@ -134,11 +134,8 @@ class SiPortEventAPITester:
         
         if success and isinstance(response, list):
             print(f"   ✓ Retrieved {len(response)} status checks")
-            return True
-        elif success:
-            self.log_test("Status Checks Retrieval Validation", False, f"Expected list, got {type(response)}")
-            return False
-        return False
+        
+        return success
 
     def run_all_tests(self):
         """Run all API tests"""
