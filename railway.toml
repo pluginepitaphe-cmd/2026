@@ -1,8 +1,9 @@
 [build]
-builder = "dockerfile"
+builder = "nixpacks"
 
 [deploy]
 healthcheckPath = "/api/health"
 healthcheckTimeout = 300
 restartPolicyType = "on_failure"
 restartPolicyMaxRetries = 3
+startCommand = "cd backend && python -m venv venv && source venv/bin/activate && pip install --break-system-packages -r requirements.txt && python server.py"
