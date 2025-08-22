@@ -24,7 +24,12 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Database configuration
-DATABASE_URL = os.environ.get('DATABASE_URL', 'postgresql+asyncpg://user:password@localhost/dbname')
+DATABASE_URL = os.environ.get('DATABASE_URL')
+if not DATABASE_URL:
+    DATABASE_URL = 'sqlite+aiosqlite:///./siportevent.db'
+    logger.warning("DATABASE_URL not set, using SQLite fallback")
+else:
+    logger.info(f"Using database: {DATABASE_URL.split('@')[0] if '@' in DATABASE_URL else 'Local SQLite'}")
 
 # Create async engine
 engine = create_async_engine(
