@@ -1,0 +1,32 @@
+[build]
+builder = "nixpacks"
+
+[deploy]
+healthcheckPath = "/api/health"
+healthcheckTimeout = 300
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 3
+
+# Backend service
+[[services]]
+name = "backend"
+source = "backend"
+
+[services.build]
+buildCommand = "pip install -r requirements.txt"
+startCommand = "python server.py"
+
+[services.variables]
+PORT = "8001"
+
+# Frontend service  
+[[services]]
+name = "frontend"
+source = "frontend"
+
+[services.build]
+buildCommand = "yarn install && yarn build"
+startCommand = "yarn start"
+
+[services.variables]
+PORT = "3000"
