@@ -176,7 +176,7 @@ class SiPortEventAPITester:
 def main():
     """Main test function"""
     print("SiPortEvent 2026 - Backend API Testing")
-    print("Testing against Railway production URL")
+    print("Testing against local development server")
     
     tester = SiPortEventAPITester()
     success = tester.run_all_tests()
