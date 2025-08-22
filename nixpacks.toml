@@ -1,0 +1,16 @@
+[phases.setup]
+nixPkgs = ["python39", "python39Packages.pip", "nodejs-18_x", "yarn"]
+
+[phases.install]
+cmds = [
+  "cd backend && pip install -r requirements.txt",
+  "cd frontend && yarn install"
+]
+
+[phases.build]
+cmds = [
+  "cd frontend && yarn build"
+]
+
+[start]
+cmd = "python backend/server.py"

@@ -1,0 +1,18 @@
+{
+  "name": "siportevent-2026",
+  "version": "1.0.0",
+  "description": "Sport Event Management Application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "cd frontend && yarn install && yarn build",
+    "dev": "cd backend && python server.py",
+    "install-deps": "cd backend && pip install -r requirements.txt && cd ../frontend && yarn install"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "python": ">=3.9.0"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
