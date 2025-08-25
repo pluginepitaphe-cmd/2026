@@ -12,7 +12,7 @@ startCommand = "cd backend && python -m venv venv && source venv/bin/activate &&
 name = "build-frontend"
 commands = [
   "cd frontend",
-  "npm install -g yarn",
+  "npm install --global yarn",
   "npm install --prefix .",
   "npm run build --prefix ."
 ]
