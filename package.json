@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "build": "cd frontend && yarn install && yarn build",
+    "build": "cd frontend && npm install && npm run build",
     "dev": "cd backend && python server.py",
-    "install-deps": "cd backend && pip install -r requirements.txt && cd ../frontend && yarn install"
+    "install-deps": "cd backend && pip install -r requirements.txt && cd ../frontend && npm install"
   },
   "engines": {
     "node": ">=18.0.0",
@@ -16,3 +16,5 @@
   "dependencies": {},
   "devDependencies": {}
 }
+
+
