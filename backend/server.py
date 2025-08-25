@@ -160,7 +160,8 @@ app.add_middleware(
 # Railway requires listening on 0.0.0.0 and the PORT environment variable
 if __name__ == "__main__":
     import uvicorn
-    port = int(os.environ.get("PORT", 8001))
+    port = int(os.environ.get("PORT"))
+    logger.info(f"Uvicorn starting on host 0.0.0.0 and port {port}")
     uvicorn.run(
         "server:app",
         host="0.0.0.0",
