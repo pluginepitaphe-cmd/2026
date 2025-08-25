@@ -24,5 +24,5 @@ COPY --from=builder /app/package.json .
 COPY --from=builder /app/start.sh .
 
 # Start the application
-CMD ["npm", "start"]
+CMD ["/bin/sh", "-c", "npm start"]
 
