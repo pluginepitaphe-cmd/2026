@@ -7,3 +7,13 @@ healthcheckTimeout = 300
 restartPolicyType = "on_failure"
 restartPolicyMaxRetries = 3
 startCommand = "cd backend && python -m venv venv && source venv/bin/activate && pip install --break-system-packages -r requirements.txt && python server.py"
+
+[[nixpacks.build.phases]]
+name = "build-frontend"
+commands = [
+  "cd frontend",
+  "npm install --prefix .",
+  "npm run build --prefix ."
+]
+
+
