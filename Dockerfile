@@ -1,9 +1,9 @@
-FROM node:20-alpine
+FROM node:20-alpine AS builder
 
 WORKDIR /app
 
 # Install root dependencies
-COPY package.json .
+COPY package.json package-lock.json* ./
 RUN npm install
 
 # Copy the rest of the application
@@ -11,13 +11,17 @@ COPY . .
 
 # Build frontend
 WORKDIR /app/frontend
-RUN rm -rf node_modules package-lock.json
-RUN npm cache clean --force
+COPY frontend/package.json frontend/package-lock.json* ./
 RUN npm install --force
 RUN npm run build
 
-# Go back to root workdir
+# Production stage
+FROM node:20-alpine
 WORKDIR /app
+COPY --from=builder /app/frontend/build ./frontend/build
+COPY --from=builder /app/backend ./backend
+COPY --from=builder /app/package.json .
+COPY --from=builder /app/start.sh .
 
 # Start the application
 CMD ["npm", "start"]
