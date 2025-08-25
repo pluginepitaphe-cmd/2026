@@ -161,7 +161,7 @@ app.add_middleware(
 if __name__ == "__main__":
     import uvicorn
     port = int(os.environ.get("PORT"))
-    logger.info(f"Uvicorn starting on host 0.0.0.0 and port {port}")
+    logger.info(f"Uvicorn will attempt to run on host 0.0.0.0 and port {port}")
     uvicorn.run(
         "server:app",
         host="0.0.0.0",
