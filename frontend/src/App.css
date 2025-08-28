@@ -252,7 +252,8 @@ body {
 
 /* Focus styles for accessibility */
 .focus-visible:focus {
-  @apply outline-none ring-2 ring-blue-500 ring-offset-2;
+  outline: none;
+  box-shadow: 0 0 0 2px #3b82f6;
 }
 
 /* Text styles */
