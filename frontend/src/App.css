@@ -339,7 +339,14 @@ body {
 
 /* Notification styles */
 .notification-dot {
-  @apply absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full border-2 border-white;
+  position: absolute;
+  top: -0.25rem;
+  right: -0.25rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: #ef4444;
+  border-radius: 50%;
+  border: 2px solid white;
 }
 
 /* Progress styles */
