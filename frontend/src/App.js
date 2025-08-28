@@ -3,6 +3,8 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import axios from "axios";
 
+// FORCE UPDATE - Test déploiement Vercel - Timestamp: 2025-08-28-11:35
+
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || "https://2026-ml6c.vercel.app";
 const API = `${BACKEND_URL}/api`;
 
