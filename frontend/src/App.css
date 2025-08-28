@@ -258,19 +258,25 @@ body {
 
 /* Text styles */
 .text-heading {
-  @apply text-2xl font-bold text-slate-900 tracking-tight;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0f172a;
 }
 
 .text-subheading {
-  @apply text-lg font-semibold text-slate-800;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1e293b;
 }
 
 .text-body {
-  @apply text-slate-600 leading-relaxed;
+  color: #475569;
+  line-height: 1.625;
 }
 
 .text-caption {
-  @apply text-sm text-slate-500;
+  font-size: 0.875rem;
+  color: #64748b;
 }
 
 /* Layout utilities */
