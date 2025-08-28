@@ -1,9 +1,0 @@
-backend/
-*.py
-*.db
-*.sqlite
-*.sqlite3
-requirements.txt
-railway.json
-railway.toml
-Procfile
