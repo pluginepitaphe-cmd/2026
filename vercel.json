@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "name": "application-postgresql-2026",
+  "builds": [
+    {
+      "src": "frontend/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "build"
+      }
+    },
+    {
+      "src": "backend/server.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/backend/server.py"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/frontend/build/$1"
+    }
+  ],
+  "env": {
+    "REACT_APP_BACKEND_URL": "https://siporteventeljadida.vercel.app"
+  },
+  "functions": {
+    "backend/server.py": {
+      "runtime": "python3.11"
+    }
+  }
+}
