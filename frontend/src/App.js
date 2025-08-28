@@ -81,10 +81,11 @@ const Home = () => {
   return (
     <div className="p-8">
       <header className="text-center mb-8">
-        <h1 className="text-3xl font-bold text-blue-600 mb-4">
-          Application PostgreSQL 2026
+        <h1 className="text-4xl font-bold text-green-600 mb-4">
+          🎉 APPLICATION POSTGRESQL 2026 DÉPLOYÉE ! 🎉
         </h1>
-        <p className="text-gray-600">Migration réussie vers PostgreSQL pour Railway</p>
+        <p className="text-lg text-blue-600 font-semibold">✅ Migration réussie vers PostgreSQL ✅</p>
+        <p className="text-sm text-gray-500 mt-2">Déploiement Vercel - 28 Août 2025</p>
       </header>
 
       <div className="max-w-4xl mx-auto space-y-6">
