@@ -7,7 +7,7 @@ import {
   ChatBubbleLeftRightIcon,
   LightBulbIcon,
   UserGroupIcon,
-  TrendingUpIcon,
+  ArrowTrendingUpIcon as TrendingUpIcon,
   BellIcon,
   EyeIcon
 } from '@heroicons/react/24/outline';
