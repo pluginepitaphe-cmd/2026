@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# 🌐 SIPORTS Frontend - React + Vite
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📋 Description
 
-## Available Scripts
+Frontend React complet pour SIPORTS v2.0 avec :
+- Interface utilisateur moderne
+- Authentification multi-rôles
+- Dashboard administrateur
+- Pages exposants professionnelles
+- Système de packages
+- Intégration chatbot IA
 
-In the project directory, you can run:
+## 🚀 Installation Locale
 
-### `npm start`
+```bash
+# Installer les dépendances
+npm install
+# ou
+yarn install
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Configurer les variables d'environnement
+cp .env.example .env
+# Modifier .env avec l'URL de votre backend
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Lancer en mode développement
+npm run dev
+# ou
+yarn dev
+```
 
-### `npm test`
+## 📦 Scripts Disponibles
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm run dev      # Serveur de développement
+npm run build    # Build de production
+npm run preview  # Aperçu du build
+npm run lint     # Vérification du code
+```
 
-### `npm run build`
+## 🏗️ Build de Production
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+# Build optimisé
+npm run build
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Le dossier dist/ contient les fichiers prêts pour déploiement
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🔗 Configuration Backend
 
-### `npm run eject`
+### Développement Local
+```env
+VITE_BACKEND_URL=http://localhost:8001
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Production
+```env
+VITE_BACKEND_URL=https://siportevent-production.up.railway.app
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📱 Pages Principales
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Publiques
+- `/` - Page d'accueil
+- `/login` - Connexion
+- `/register` - Inscription
+- `/exposants` - Annuaire exposants
+- `/partenaires` - Page partenaires
+- `/forfaits` - Forfaits visiteur
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Authentifiées
+- `/dashboard` - Dashboard utilisateur
+- `/admin/dashboard` - Dashboard administrateur
+- `/calendrier` - Calendrier des RDV
+- `/messages` - Messagerie
+- `/networking` - Réseautage
+- `/analytics` - Analytics (admin)
 
-## Learn More
+## 🧪 Comptes de Test
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Admin**: admin@siportevent.com / admin123
+- **Exposant**: exposant@example.com / exhibitor123
+- **Visiteur**: visitor@example.com / visitor123
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🎨 Technologies Utilisées
 
-### Code Splitting
+- **React 18** - Framework principal
+- **Vite 6** - Build tool moderne
+- **Tailwind CSS** - Framework CSS
+- **React Router** - Navigation
+- **Recharts** - Graphiques analytics
+- **Lucide React** - Icônes
+- **Axios** - Appels API
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🚀 Déploiement Vercel
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Voir `../docs/DEPLOY_FRONTEND.md` pour les instructions complètes.

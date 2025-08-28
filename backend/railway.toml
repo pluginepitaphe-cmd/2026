@@ -1,0 +1,15 @@
+[build]
+builder = "nixpacks"
+
+[deploy]
+startCommand = "python server.py"
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 10
+
+[[services]]
+name = "siports-backend"
+
+[services.variables]
+PORT = "8000"
+JWT_SECRET_KEY = "siports-jwt-secret-key-2024-production"
+DATABASE_URL = "instance/siports_production.db"

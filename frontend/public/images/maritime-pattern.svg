@@ -1,0 +1,9 @@
+<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="maritime" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse">
+      <circle cx="25" cy="25" r="3" fill="#1e40af" opacity="0.3"/>
+      <path d="M10,25 Q25,10 40,25 Q25,40 10,25" stroke="#1e40af" stroke-width="1" fill="none" opacity="0.2"/>
+    </pattern>
+  </defs>
+  <rect width="100" height="100" fill="url(#maritime)"/>
+</svg>
