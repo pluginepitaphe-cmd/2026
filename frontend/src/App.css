@@ -320,15 +320,21 @@ body {
 
 /* Message styles */
 .message-bubble {
-  @apply max-w-xs lg:max-w-md px-4 py-2 rounded-2xl break-words;
+  max-width: 20rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  word-wrap: break-word;
 }
 
 .message-sent {
-  @apply message-bubble bg-blue-600 text-white ml-auto;
+  background-color: #2563eb;
+  color: white;
+  margin-left: auto;
 }
 
 .message-received {
-  @apply message-bubble bg-slate-100 text-slate-900;
+  background-color: #f1f5f9;
+  color: #0f172a;
 }
 
 /* Notification styles */
