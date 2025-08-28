@@ -39,7 +39,7 @@ export default defineConfig({
     fs: {
       strict: false,
       allow: [
-        '/app/frontend'
+        '/app'
       ]
     }
   }
