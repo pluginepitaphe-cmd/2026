@@ -366,17 +366,25 @@ body {
 
 /* Compatibility score colors */
 .compatibility-excellent {
-  @apply text-green-600 bg-green-50 border-green-200;
+  color: #059669;
+  background-color: #ecfdf5;
+  border-color: #a7f3d0;
 }
 
 .compatibility-good {
-  @apply text-blue-600 bg-blue-50 border-blue-200;
+  color: #2563eb;
+  background-color: #eff6ff;
+  border-color: #bfdbfe;
 }
 
 .compatibility-moderate {
-  @apply text-yellow-600 bg-yellow-50 border-yellow-200;
+  color: #d97706;
+  background-color: #fffbeb;
+  border-color: #fcd34d;
 }
 
 .compatibility-low {
-  @apply text-slate-600 bg-slate-50 border-slate-200;
+  color: #64748b;
+  background-color: #f8fafc;
+  border-color: #e2e8f0;
 }
