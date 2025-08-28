@@ -56,7 +56,7 @@
   },
   "scripts": {
     "start": "craco start",
-    "build": "craco build && cp -r build/* .",
+    "build": "craco build",
     "test": "craco test",
     "vercel-build": "craco build"
   },
