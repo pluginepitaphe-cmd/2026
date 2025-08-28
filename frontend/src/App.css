@@ -238,7 +238,9 @@ body {
 
 /* Loading states */
 .loading-skeleton {
-  @apply bg-slate-200 animate-pulse rounded;
+  background-color: #e2e8f0;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  border-radius: 0.25rem;
 }
 
 /* Responsive utilities */
