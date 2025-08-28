@@ -28,7 +28,14 @@ class StatusCheck(Base):
 # Database setup
 DATABASE_URL = os.environ.get('DATABASE_URL')
 if not DATABASE_URL:
-    raise ValueError("DATABASE_URL environment variable is required")
+    logger.warning("DATABASE_URL not set, using default PostgreSQL URL")
+    DATABASE_URL = "postgresql+asyncpg://username:password@localhost:5432/dbname"
+
+# Convert URL for asyncpg if needed
+if DATABASE_URL.startswith("postgresql://"):
+    DATABASE_URL = DATABASE_URL.replace("postgresql://", "postgresql+asyncpg://", 1)
+elif not DATABASE_URL.startswith("postgresql+asyncpg://"):
+    DATABASE_URL = DATABASE_URL.replace("postgresql", "postgresql+asyncpg", 1)
 
 # Create async engine
 engine = create_async_engine(
