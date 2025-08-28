@@ -93,12 +93,17 @@ const Home = () => {
           
           {healthStatus && (
             <div className="mt-4">
-              <p>Status: <span className={`font-semibold ${healthStatus.status === 'healthy' ? 'text-green-600' : 'text-red-600'}`}>
+              <p>Status: <span className={`font-semibold ${healthStatus.status === 'healthy' ? 'text-green-600' : healthStatus.status === 'demo' ? 'text-blue-600' : 'text-red-600'}`}>
                 {healthStatus.status}
               </span></p>
-              <p>Base de données: <span className={`font-semibold ${healthStatus.database === 'connected' ? 'text-green-600' : 'text-orange-600'}`}>
+              <p>Base de données: <span className={`font-semibold ${healthStatus.database === 'connected' ? 'text-green-600' : healthStatus.database === 'demo_mode' ? 'text-blue-600' : 'text-orange-600'}`}>
                 {healthStatus.database}
               </span></p>
+              {healthStatus.message && (
+                <p className="text-sm text-blue-600 mt-2 font-semibold">
+                  🎉 {healthStatus.message}
+                </p>
+              )}
               {healthStatus.database === 'disconnected' && (
                 <p className="text-sm text-gray-500 mt-2">
                   ℹ️ Normal en développement - PostgreSQL sera connecté sur Railway
