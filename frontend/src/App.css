@@ -301,11 +301,21 @@ body {
 
 /* Hover effects */
 .hover-lift {
-  @apply transform transition-transform duration-200 hover:scale-105 hover:shadow-lg;
+  transform: scale(1);
+  transition: transform 200ms;
+}
+
+.hover-lift:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 .hover-glow {
-  @apply transition-all duration-200 hover:shadow-lg hover:shadow-blue-500/25;
+  transition: all 200ms;
+}
+
+.hover-glow:hover {
+  box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.25);
 }
 
 /* Message styles */
