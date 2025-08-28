@@ -281,11 +281,13 @@ body {
 
 /* Layout utilities */
 .container-padding {
-  @apply px-4 sm:px-6 lg:px-8;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .section-spacing {
-  @apply py-8 sm:py-12 lg:py-16;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 /* Custom shadows */
