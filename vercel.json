@@ -1,21 +1,9 @@
 {
   "version": 2,
   "name": "application-postgresql-2026",
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/backend/server.py"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/frontend/$1"
-    }
-  ],
   "functions": {
-    "backend/server.py": {
+    "api/index.py": {
       "runtime": "python3.11"
     }
-  },
-  "buildCommand": "cd frontend && yarn build",
-  "outputDirectory": "frontend/build"
+  }
 }
