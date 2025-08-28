@@ -1,0 +1,209 @@
+CATALOGUE PRODUITS 2024
+========================
+
+Maritime Tech Solutions - Solutions Technologiques Innovantes
+
+===================================================
+
+SOMMAIRE
+========
+
+1. SmartPort Platform
+2. NaviGuard System  
+3. CargoTrack IoT
+4. PortOptimizer AI
+5. Services & Support
+6. Contacts
+
+1. SMARTPORT PLATFORM
+=====================
+
+DESCRIPTION
+-----------
+Plateforme de gestion portuaire intelligente avec IA intégrée, 
+révolutionnant les opérations portuaires modernes.
+
+FONCTIONNALITÉS PRINCIPALES
+---------------------------
+• Gestion en temps réel des opérations
+• Prédictions IA pour l'optimisation des flux
+• Interface utilisateur intuitive et moderne
+• API complète pour intégrations tierces
+• Tableaux de bord personnalisables
+• Alertes et notifications automatiques
+
+SPÉCIFICATIONS TECHNIQUES
+-------------------------
+• Architecture cloud-native
+• Compatible avec tous les systèmes portuaires
+• Sécurité de niveau bancaire (ISO 27001)
+• Disponibilité 99.9% garantie
+• Support multilingue (15 langues)
+
+PRIX : Sur devis (à partir de €150,000)
+
+2. NAVIGUARD SYSTEM
+==================
+
+DESCRIPTION
+-----------
+Système de surveillance maritime avancé avec détection automatique 
+des menaces et incidents en temps réel.
+
+FONCTIONNALITÉS PRINCIPALES
+---------------------------
+• Détection radar haute précision
+• Vision nocturne et thermique
+• Alertes automatiques intelligentes
+• Intégration satellite complète
+• Reconnaissance automatique des navires
+• Historique et analytics avancés
+
+SPÉCIFICATIONS TECHNIQUES
+-------------------------
+• Portée radar : jusqu'à 50 km
+• Résolution thermique : 0.1°C
+• Temps de réponse : < 2 secondes
+• Stockage : 10 TB inclus
+• Connectivité : 4G/5G/Satellite
+
+PRIX : €45,000 (installation comprise)
+
+3. CARGOTRACK IOT
+=================
+
+DESCRIPTION
+-----------
+Solution de traçabilité des conteneurs avec capteurs IoT 
+pour un suivi complet de la chaîne logistique.
+
+FONCTIONNALITÉS PRINCIPALES
+---------------------------
+• Géolocalisation GPS précise
+• Capteurs environnementaux complets
+• Alertes temps réel sur mobile/web
+• Dashboard web interactif
+• Intégration ERP/WMS
+• Rapports automatisés
+
+SPÉCIFICATIONS TECHNIQUES
+-------------------------
+• Précision GPS : ±1 mètre
+• Autonomie batterie : 2 ans
+• Capteurs : température, humidité, chocs
+• Connectivité : LoRaWAN/NB-IoT
+• Résistance : IP67
+
+PRIX : €12,500 (pack de 100 capteurs)
+
+4. PORTOPTIMIZER AI
+===================
+
+DESCRIPTION
+-----------
+Optimisation des opérations portuaires par intelligence artificielle
+pour maximiser l'efficacité et réduire les coûts.
+
+FONCTIONNALITÉS PRINCIPALES
+---------------------------
+• Optimisation automatique des flux
+• Prédiction de trafic maritime
+• Réduction des coûts opérationnels
+• Reporting avancé et KPI
+• Machine learning adaptatif
+• Intégration systèmes existants
+
+BÉNÉFICES MESURÉS
+-----------------
+• Réduction des coûts : 25-35%
+• Amélioration des délais : 40%
+• Optimisation énergétique : 30%
+• ROI moyen : 18 mois
+
+PRIX : Sur devis (à partir de €200,000)
+
+5. SERVICES & SUPPORT
+====================
+
+CONSULTING MARITIME
+-------------------
+• Audit et diagnostic des opérations
+• Stratégie de transformation digitale
+• Formation des équipes
+• Accompagnement au changement
+
+INTÉGRATION SYSTÈME
+-------------------
+• Installation et configuration
+• Tests et mise en service
+• Formation utilisateurs
+• Documentation complète
+
+SUPPORT TECHNIQUE
+-----------------
+• Support 24/7 multilingue
+• Maintenance préventive
+• Mises à jour automatiques
+• Garantie constructeur
+
+FORMATION
+---------
+• Programmes de formation certifiants
+• E-learning disponible
+• Support technique avancé
+• Certification utilisateurs
+
+6. RÉFÉRENCES CLIENTS
+====================
+
+PORTS ÉQUIPÉS
+-------------
+• Port de Rotterdam (Pays-Bas)
+• Port d'Anvers (Belgique)  
+• Port de Hambourg (Allemagne)
+• Port de Singapour
+• Port de Los Angeles (USA)
+• + 145 autres ports dans le monde
+
+TÉMOIGNAGES
+-----------
+"Maritime Tech Solutions a révolutionné nos opérations. 
+Nous avons réduit nos coûts de 30% en 18 mois."
+- Directeur Port de Rotterdam
+
+"L'IA de PortOptimizer nous permet d'anticiper 
+les pics de trafic avec une précision remarquable."
+- Manager Port d'Anvers
+
+7. CONTACT
+==========
+
+SIÈGE SOCIAL
+------------
+Maritime Tech Solutions
+Wilhelminakade 123
+3072 AP Rotterdam, Pays-Bas
+
+CONTACT COMMERCIAL
+------------------
+Téléphone : +31 10 123 4567
+Email : sales@maritimetech.nl
+Web : www.maritimetech.nl
+
+SUPPORT TECHNIQUE
+-----------------
+Téléphone : +31 10 123 4568
+Email : support@maritimetech.nl
+Disponible 24h/24, 7j/7
+
+SALON MARITIME
+--------------
+Retrouvez-nous sur notre stand A-125
+Pavillon Technologie
+Démonstrations en continu
+
+---
+
+© 2024 Maritime Tech Solutions - Tous droits réservés
+Catalogue valable jusqu'au 31 décembre 2024
+
