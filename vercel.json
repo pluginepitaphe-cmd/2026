@@ -1,9 +1,6 @@
 {
   "version": 2,
-  "name": "application-postgresql-2026",
-  "functions": {
-    "api/index.py": {
-      "runtime": "python3.11"
-    }
-  }
+  "buildCommand": "cd frontend && yarn build",
+  "outputDirectory": "frontend/build",
+  "installCommand": "cd frontend && yarn install"
 }
