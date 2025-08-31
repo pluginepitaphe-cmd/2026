@@ -29,10 +29,6 @@ export default defineConfig({
     host: true,
     port: 3000,
     strictPort: false,
-    hmr: {
-      host: "fc4d8fa7-4882-4f51-b44b-a423d2e0aa3d.preview.emergentagent.com",
-      protocol: "wss"
-    },
     watch: {
       usePolling: true
     },

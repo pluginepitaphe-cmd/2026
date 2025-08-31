@@ -4,7 +4,7 @@ import { toast } from 'sonner';
 
 const AuthContext = createContext();
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || 'http://localhost:8001';
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:8001';
 
 export const useAuth = () => {
   const context = useContext(AuthContext);
